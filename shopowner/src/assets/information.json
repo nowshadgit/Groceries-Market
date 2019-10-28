@@ -1,0 +1,348 @@
+{
+	"items": [
+		{
+			"name": "Foodgrains, Oil & Masala",
+			"children": [
+				{
+					"name": "Rice & Rice Products"
+				},
+				{
+					"name": "Atta, Flours & Sooji"
+				},
+				{
+					"name": "Dals & Pulses"
+				},
+				{
+					"name": "Salt, Sugar & Jaggery"
+				},
+				{
+					"name": "Edible Oils & Ghee"
+				},
+				{
+					"name": "Organic Stables"
+				},
+				{
+					"name": "Dry Fruits"
+				},
+				{
+					"name": "RMasalas & Spices"
+				}
+
+			]
+
+		},
+		{
+			"name": "Fruits & Vegetables",
+			"children": [
+				{
+					"name":"Fresh Vegetables"
+				},
+				{
+					"name":"Fresh Herbs & Seasonings"
+				},
+				{
+					"name":"Fresh Fruits"
+				},
+				{
+					"name":"Cuts & Sprouts"
+				},
+				{
+					"name":"International Fruits And Vegetables"
+				},
+				{
+					"name":"Organic Fruits & Vegetables"
+				},
+				{
+					"name":"Flowers"
+				},
+				{
+					"name":"Vegetables"
+				}
+			]
+		},
+		{
+			"name": " Beverages",
+			"children": [
+				{
+					"name":"Mineral Water"
+				},
+				{
+					"name":"Energy & Health Drinks"
+				},
+				{
+					"name":"Soft Drinks"
+				},
+				{
+					"name":"Tea & Coffee"
+				},
+				{
+					"name":"Fruit Drinks &  Juices"
+				},
+				{
+					"name":"Ayurvedic"
+				},
+				{
+					"name":"Organic Beverages"
+				}
+				
+			]
+		},
+		{
+			"name": "Bakery, Cakes & Dairy",
+			"children": [
+				{
+					"name": "Cookies, Rusk & Khari"
+				},
+				{
+					"name":"Gourmet Breads"
+				},
+				{
+					"name":"Cakes & Pastries"
+				},
+				{
+					"name":"Ice Creams & Desserts"
+				}
+			]
+		},
+		{
+			"name": "Branded Foods",
+			"children": [
+				{
+					"name":"Breakfast Cereals"
+				},
+				{
+					"name":"Noodles"
+				},
+				{
+					"name":"Biscuits"
+				},
+				{
+					"name":"Jams & Spreads"
+				},
+				{
+					"name":"Pasta & Vermicelli"
+				},
+				{
+					"name":"Veg Snacks"
+				},
+				{
+					"name":"Sauces & Ketchup"
+				},
+				{
+					"name":"Chocolates & Sweets"
+				},
+				{
+					"name":"Ready To Eat & Cook"
+				},
+				{
+					"name":"Baking & Dessert items"
+				},
+				{
+					"name":"Indian Sweets"
+				},
+				{
+					"name":"Canned Food"
+				},
+				{
+					"name":"Picklets"
+				},
+				{
+					"name":"Ayurvedic Food"
+				},
+				{
+					"name":"Health & Nutrition"
+				}		
+			]
+		},
+		{
+			"name": "Beauty & Hygiene",
+			"children": [
+				{
+					"name":"Feminine Hygiene"
+				},
+				{
+					"name":"Oral Care"
+				},
+				{
+					"name":"Bath, Face & Hand Wash"
+				},
+				{
+					"name":"Hair Care"
+				},
+				{
+					"name":"Health & Medicine"
+				},
+				{
+					"name":"Skin Care"
+				},
+				{
+					"name":"Mens Grooming"
+				},
+				{
+					"name":"Makeup"
+				},
+				{
+					"name":"Deodorant & Fragrance"
+				}
+
+			]
+		},
+		{
+			"name": "Household",
+			"children": [
+				{
+					"name":"Kitchen & Dining"
+				},
+				{
+					"name":"Detergents"
+				},
+				{
+					"name":"Utesil Cleaners"
+				},
+				{
+					"name":"Toilets, Floor & Other Cleaners"
+				},
+				{
+					"name":"Disposables, Garbage Bag"
+				},
+				{
+					"name":"Paper & Disposible"
+				},
+				{
+					"name":"Repellents & Fresheners"
+				},
+				{
+					"name":"Plasticware"
+				},
+				{
+					"name":"Cleaning Accessories"
+				},
+				{
+					"name":"Pet Care"
+				},
+				{
+					"name":"Shoe Care"
+				},
+				{
+					"name":"Cookware"
+				},
+				{
+					"name":"Pooja Needs"
+				},
+				{
+					"name":"Electricals"
+				},
+				{
+					"name":"Kitchen Tools"
+				},
+				{
+					"name":"Car & Shoe Care"
+				},
+				{
+					"name":"Serveware"
+				},
+				{
+					"name":"Gardening Needs"
+				},
+				{
+					"name":"Back To School"
+				},
+				{
+					"name":"Utilities"
+				},
+				{
+					"name":"Gifting"
+				},
+				{
+					"name":"Safty Accessories"
+				},
+				{
+					"name":"Car Care"
+				},
+				{
+					"name":"Kitchen Ware"
+				},
+				{
+					"name":"Other Accessories"
+				},
+				{
+					"name":"Crackers"
+				},
+				{
+					"name":"Party & Festival Needs"
+				},
+				{
+					"name":"Feminine Hygiene"
+				},
+				{
+					"name":"Raincoat"
+				}
+			]
+		},
+		{
+			"name": "Gourmet & World Food",
+			"children": [
+				{
+					"name":"Oils & Vinegar"
+				},
+				{
+					"name":"Dairy & Cheese"
+				},
+				{
+					"name":"Snacks, Dry Fruits, Nuts"
+				},
+				{
+					"name":"Pasta, Soup & Noodles"
+				},
+				{
+					"name":"Sauces, Spreads & Dips"
+				},
+				{
+					"name":"Chocolates & Biscuits"
+				},
+				{
+					"name":"Drinks & Beverages"
+				},
+				{
+					"name":"Cereals & Breakfast"
+				},
+				{
+					"name":"Tinned & processed Food"
+				}
+			]
+		},
+		{
+			"name": "Eggs, Meat & Fish",
+			"children": [
+				{
+					"name":"Eggs"
+				},
+				{
+					"name":"Marinates"
+				},
+				{
+					"name":"Poultry"
+				},
+				{
+					"name":"Fish & Seafood"
+				},
+				{
+					"name":"Mutton & Lamb"
+				}
+
+			]
+		},
+		{
+			"name": "Baby Care",
+			"children": [
+				{
+					"name":"Baby Food & Formula"
+				},
+				{
+					"name":"Baby Diapers & Wipes"
+				}
+			]
+		}
+
+	]
+}

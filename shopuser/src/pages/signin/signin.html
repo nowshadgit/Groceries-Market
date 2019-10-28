@@ -1,0 +1,21 @@
+<ion-header>
+	<h1 style="text-align: center;"><font color="white" size="7px">G</font><font color="#009900" size="6px">roceries </font><font color="white" size="7px">M</font><font color="#009900" size="6px">arket</font></h1>
+</ion-header>
+
+
+<ion-content >
+ <ion-list>
+ 	<ion-item>
+ 		<ion-label floating>Email Id</ion-label>
+ 		<ion-input type="text" [(ngModel)]="shopId"></ion-input>
+ 	</ion-item>
+ 	<ion-item>
+ 		<ion-label floating>Password</ion-label>
+ 		<ion-input type="password" [(ngModel)]="password"></ion-input>
+ 	</ion-item>
+ 		<button ion-button  (click)='signin(shopId,password)' class="b1" block><font color="#ffff80" size="4px">Sign In</font></button>
+ 		<button ion-button class="b2" (click)='signup()' block><font color="#e0daa6" size="4px">Sign Up</font></button>
+ 		<button ion-button class="b3"(click)='skip()' block><font color="#333300" size="4px">Skip</font></button>
+ </ion-list>
+</ion-content>
+

@@ -1,0 +1,54 @@
+<ion-header>
+  <ion-navbar>
+  <h1 style="text-align: center;">Adminstrator</h1>
+</ion-navbar>
+</ion-header>
+
+<ion-content padding>
+ <div padding>
+  <ion-segment [(ngModel)]="pet">
+    <ion-segment-button value="Items">
+      Items from shop
+    </ion-segment-button>
+    <ion-segment-button value="Orders">
+      Orders from users
+    </ion-segment-button>
+    <ion-segment-button value="Address">
+      Address adding
+    </ion-segment-button>
+  </ion-segment>
+</div>
+
+<div [ngSwitch]="pet">
+  <ion-list *ngSwitchCase="'Items'">
+    <ion-list>
+
+		<button ion-item *ngFor="let item of itemsarray; let i = index " (click)="Itemdetails(item)">
+			<h2>ItemName:{{item.Name}}</h2>
+			<h3>Amount per kg:{{item.amount}}</h3>
+      <h3>Item address:{{item.address}}</h3>
+		</button>
+
+	</ion-list>
+	  </ion-list>
+
+  <ion-list *ngSwitchCase="'Orders'">
+    <ion-list>
+
+		<button ion-item *ngFor="let item of orderarray; let i = index " (click)="orderdetails(item)">
+			<h2>ItemName:{{item.Name}}</h2>
+			<h3>Amount per kg:{{item.amount}}</h3>
+		</button>
+
+	</ion-list>
+  </ion-list>
+
+   <ion-list *ngSwitchCase="'Address'">
+	    <ion-item>
+	 		<ion-label floating>Address</ion-label>
+	 		<ion-input type="text" [(ngModel)]="shopId"></ion-input>
+	 	</ion-item>
+	 	<button ion-button  (click)='addressIs(shopId)' block>Sign In</button>
+  </ion-list>
+</div>
+</ion-content>

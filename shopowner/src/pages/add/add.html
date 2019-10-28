@@ -1,0 +1,57 @@
+
+<ion-header>
+
+ 	<h1 style="text-align: center;"><font color="white" size="7px">G</font><font color="#009900" size="6px">roceries </font><font color="white" size="7px">M</font><font color="#009900" size="6px">arket</font></h1>
+ 	<h2>H!: {{this.shopId}}</h2>
+	
+</ion-header>
+
+
+<ion-content padding>
+	
+<div padding>
+	<ion-segment [(ngModel)]="Market">
+		<ion-segment-button value="Items">
+			Add Items
+		</ion-segment-button>
+		<ion-segment-button value="Recieved">
+			Recieved Orders
+		</ion-segment-button>
+	</ion-segment>
+</div>
+<div [ngSwitch]="Market">
+	<ion-list *ngSwitchCase="'Items'" class="first" no-lines>
+		<ion-list-header *ngFor="let item of information; let i = index" no-line no-padding>
+	<button ion-item (click)= "toggleSection(i)" detail-none [ngClass]="{'section-active': item.open, 'section': !item.open}">
+		<ion-icon item-right name="arrow-down" *ngIf="!item.open"></ion-icon>
+		<ion-icon item-right name="arrow-up" *ngIf="item.open"></ion-icon>
+		{{ item.name }}
+	</button>
+	<ion-list *ngIf="item.children && item.open" no-lines class="sec">
+		<ion-list-header *ngFor="let child of item.children; let j = index" no-padding>
+			<button ion-item (click)="toggleitem(child)" class="child-item">
+				{{child.name}}
+			</button>
+		</ion-list-header>
+	</ion-list>
+</ion-list-header>
+</ion-list>
+
+</div>
+
+<div [ngSwitch]="Market">
+	<ion-list *ngSwitchCase="'Recieved'">
+		<ion-list>
+
+		<button ion-item *ngFor="let item of orderarray; let i = index " (click)="orderdetails(item)">
+			<h2>ItemName:{{item.Name}}</h2>
+			<h3>Amount per kg:{{item.amount}}</h3>
+			<h3>Status:{{item.status}}</h3>
+		</button>
+
+	</ion-list>
+	</ion-list>
+</div>
+
+
+</ion-content>

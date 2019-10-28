@@ -1,0 +1,1702 @@
+<ion-header>
+	<h2 style="text-align: center;"><font color="white" size="7px">G</font><font color="#009900" size="6px">roceries </font><font color="white" size="7px">M</font><font color="#009900" size="6px">arket</font></h2>
+</ion-header>
+
+<ion-content padding>
+		
+
+	<ion-card>
+		<ion-card-header style="background-color: #003300;">
+			<h1><font color="white">Rice & Rice Products</font></h1>
+		</ion-card-header>
+		<ion-list>
+	<div *ngFor="let item of itemsarray; let i = index " >
+		<button ion-item  *ngIf="item.Type=='Rice & Rice Products'"(click)="Itemdetails(itemsarray, i)" >
+			<h2 style="font-weight: bold;font-size: 10px;"><font color="black" size="4px" weight="bold">ItemName: <font color="#003300" size="5px" weight="bold">{{item.Name}}</font></font></h2>
+			<p style="text-align:right; font-weight: bold; color:#f2073e;">Count: {{item.Count}}</p>
+			<h3>Amount per {{item.quantity}} kg:{{item.amount}}</h3>
+		</button>
+	</div>
+
+	</ion-list>
+
+
+	</ion-card>
+	<ion-card>
+		<ion-card-header>
+			<h1><font color="white">Atta, Flours & Sooji</font></h1>
+		</ion-card-header>
+		<ion-list>
+	<div *ngFor="let item of itemsarray; let i = index ">
+		<button ion-item  *ngIf="item.Type=='Atta, Flours & Sooji'"(click)="Itemdetails(itemsarray, i)">
+			<h2 style="font-weight: bold;font-size: 10px;"><font color="black" size="4px" weight="bold">ItemName: <font color="#003300" size="5px" weight="bold">{{item.Name}}</font></font></h2>
+			<p style="text-align:right; font-weight: bold; color:#f2073e;">Count: {{item.Count}}</p>
+			<h3>Amount per {{item.quantity}} kg:{{item.amount}}</h3>
+		</button>
+	</div>
+
+	</ion-list>
+
+
+	</ion-card>
+	<ion-card>
+		<ion-card-header>
+			<h1><font color="white">Dals & Pulses</font></h1>
+		</ion-card-header>
+		<ion-list>
+	<div *ngFor="let item of itemsarray; let i = index ">
+		<button ion-item  *ngIf="item.Type=='Dals & Pulses'"(click)="Itemdetails(itemsarray, i)">
+			<h2 style="font-weight: bold;font-size: 10px;"><font color="black" size="4px" weight="bold">ItemName: <font color="#003300" size="5px" weight="bold">{{item.Name}}</font></font></h2>
+			<p style="text-align:right; font-weight: bold; color:#f2073e;">Count: {{item.Count}}</p>
+			<h3>Amount per {{item.quantity}} kg:{{item.amount}}</h3>
+		</button>
+	</div>
+
+	</ion-list>
+
+
+	</ion-card>
+	<ion-card>
+		<ion-card-header>
+			<h1><font color="white">Salt, Sugar & Jaggery</font></h1>
+		</ion-card-header>
+		<ion-list>
+	<div *ngFor="let item of itemsarray; let i = index ">
+		<button ion-item  *ngIf="item.Type=='Salt, Sugar & Jaggery'"(click)="Itemdetails(itemsarray, i)">
+			<h2 style="font-weight: bold;font-size: 10px;"><font color="black" size="4px" weight="bold">ItemName: <font color="#003300" size="5px" weight="bold">{{item.Name}}</font></font></h2>
+			<p style="text-align:right; font-weight: bold; color:#f2073e;">Count: {{item.Count}}</p>
+			<h3>Amount per {{item.quantity}} kg:{{item.amount}}</h3>
+		</button>
+	</div>
+
+	</ion-list>
+
+
+	</ion-card>
+	<ion-card>
+		<ion-card-header>
+			<h1><font color="white">Edible Oils & Ghee</font></h1>
+		</ion-card-header>
+		<ion-list>
+	<div *ngFor="let item of itemsarray; let i = index ">
+		<button ion-item  *ngIf="item.Type=='Edible Oils & Ghee'"(click)="Itemdetails(itemsarray, i)">
+			<h2 style="font-weight: bold;font-size: 10px;"><font color="black" size="4px" weight="bold">ItemName: <font color="#003300" size="5px" weight="bold">{{item.Name}}</font></font></h2>
+			<p style="text-align:right; font-weight: bold; color:#f2073e;">Count: {{item.Count}}</p>
+			<h3>Amount per {{item.quantity}} kg:{{item.amount}}</h3>
+		</button>
+	</div>
+
+	</ion-list>
+
+
+	</ion-card>
+	<ion-card>
+		<ion-card-header>
+			<h1><font color="white">Organic Stables</font></h1>
+		</ion-card-header>
+		<ion-list>
+	<div *ngFor="let item of itemsarray; let i = index ">
+		<button ion-item  *ngIf="item.Type=='Organic Stables'"(click)="Itemdetails(itemsarray, i)">
+			<h2 style="font-weight: bold;font-size: 10px;"><font color="black" size="4px" weight="bold">ItemName: <font color="#003300" size="5px" weight="bold">{{item.Name}}</font></font></h2>
+			<p style="text-align:right; font-weight: bold; color:#f2073e;">Count: {{item.Count}}</p>
+			<h3>Amount per {{item.quantity}} kg:{{item.amount}}</h3>
+		</button>
+	</div>
+
+	</ion-list>
+
+
+	</ion-card>
+	<ion-card>
+		<ion-card-header>
+			<h1><font color="white">Dry Fruits</font></h1>
+		</ion-card-header>
+		<ion-list>
+	<div *ngFor="let item of itemsarray; let i = index ">
+		<button ion-item  *ngIf="item.Type=='Dry Fruits'"(click)="Itemdetails(itemsarray, i)">
+			<h2 style="font-weight: bold;font-size: 10px;"><font color="black" size="4px" weight="bold">ItemName: <font color="#003300" size="5px" weight="bold">{{item.Name}}</font></font></h2>
+			<p style="text-align:right; font-weight: bold; color:#f2073e;">Count: {{item.Count}}</p>
+			<h3>Amount per {{item.quantity}} kg:{{item.amount}}</h3>
+		</button>
+	</div>
+
+	</ion-list>
+
+
+	</ion-card>
+	<ion-card>
+		<ion-card-header>
+			<h1><font color="white">RMasalas & Spices</font></h1>
+		</ion-card-header>
+		<ion-list>
+	<div *ngFor="let item of itemsarray; let i = index ">
+		<button ion-item  *ngIf="item.Type=='RMasalas & Spices'"(click)="Itemdetails(itemsarray, i)">
+			<h2 style="font-weight: bold;font-size: 10px;"><font color="black" size="4px" weight="bold">ItemName: <font color="#003300" size="5px" weight="bold">{{item.Name}}</font></font></h2>
+			<p style="text-align:right; font-weight: bold; color:#f2073e;">Count: {{item.Count}}</p>
+			<h3>Amount per {{item.quantity}} kg:{{item.amount}}</h3>
+		</button>
+	</div>
+
+	</ion-list>
+
+
+	</ion-card>
+	<ion-card>
+		<ion-card-header>
+			<h1><font color="white">Fresh Vegetables</font></h1>
+		</ion-card-header>
+		<ion-list>
+	<div *ngFor="let item of itemsarray; let i = index ">
+		<button ion-item  *ngIf="item.Type=='Fresh Vegetables'"(click)="Itemdetails(itemsarray, i)">
+			<h2 style="font-weight: bold;font-size: 10px;"><font color="black" size="4px" weight="bold">ItemName: <font color="#003300" size="5px" weight="bold">{{item.Name}}</font></font></h2>
+			<p style="text-align:right; font-weight: bold; color:#f2073e;">Count: {{item.Count}}</p>
+			<h3>Amount per {{item.quantity}} kg:{{item.amount}}</h3>
+		</button>
+	</div>
+
+	</ion-list>
+
+
+	</ion-card>
+	<ion-card>
+		<ion-card-header>
+			<h1><font color="white">Fresh Herbs & Seasonings</font></h1>
+		</ion-card-header>
+		<ion-list>
+	<div *ngFor="let item of itemsarray; let i = index ">
+		<button ion-item  *ngIf="item.Type=='Fresh Herbs & Seasonings'"(click)="Itemdetails(itemsarray, i)">
+			<h2 style="font-weight: bold;font-size: 10px;"><font color="black" size="4px" weight="bold">ItemName: <font color="#003300" size="5px" weight="bold">{{item.Name}}</font></font></h2>
+			<p style="text-align:right; font-weight: bold; color:#f2073e;">Count: {{item.Count}}</p>
+			<h3>Amount per {{item.quantity}} kg:{{item.amount}}</h3>
+		</button>
+	</div>
+
+	</ion-list>
+
+
+	</ion-card>
+	<ion-card>
+		<ion-card-header>
+			<h1><font color="white">Fresh Fruits</font></h1>
+		</ion-card-header>
+		<ion-list>
+	<div *ngFor="let item of itemsarray; let i = index ">
+		<button ion-item  *ngIf="item.Type=='Fresh Fruits'"(click)="Itemdetails(itemsarray, i)">
+			<h2 style="font-weight: bold;font-size: 10px;"><font color="black" size="4px" weight="bold">ItemName: <font color="#003300" size="5px" weight="bold">{{item.Name}}</font></font></h2>
+			<p style="text-align:right; font-weight: bold; color:#f2073e;">Count: {{item.Count}}</p>
+			<h3>Amount per {{item.quantity}} kg:{{item.amount}}</h3>
+		</button>
+	</div>
+
+	</ion-list>
+
+
+	</ion-card>
+	<ion-card>
+		<ion-card-header>
+			<h1><font color="white">Cuts & Sprouts</font></h1>
+		</ion-card-header>
+		<ion-list>
+	<div *ngFor="let item of itemsarray; let i = index ">
+		<button ion-item  *ngIf="item.Type=='Cuts & Sprouts'"(click)="Itemdetails(itemsarray, i)">
+			<h2 style="font-weight: bold;font-size: 10px;"><font color="black" size="4px" weight="bold">ItemName: <font color="#003300" size="5px" weight="bold">{{item.Name}}</font></font></h2>
+			<p style="text-align:right; font-weight: bold; color:#f2073e;">Count: {{item.Count}}</p>
+			<h3>Amount per {{item.quantity}} kg:{{item.amount}}</h3>
+		</button>
+	</div>
+
+	</ion-list>
+
+
+	</ion-card>
+	<ion-card>
+		<ion-card-header>
+			<h1><font color="white">International Fruits And Vegetables</font></h1>
+		</ion-card-header>
+		<ion-list>
+	<div *ngFor="let item of itemsarray; let i = index ">
+		<button ion-item  *ngIf="item.Type=='International Fruits And Vegetables'"(click)="Itemdetails(itemsarray, i)">
+			<h2 style="font-weight: bold;font-size: 10px;"><font color="black" size="4px" weight="bold">ItemName: <font color="#003300" size="5px" weight="bold">{{item.Name}}</font></font></h2>
+			<p style="text-align:right; font-weight: bold; color:#f2073e;">Count: {{item.Count}}</p>
+			<h3>Amount per {{item.quantity}} kg:{{item.amount}}</h3>
+		</button>
+	</div>
+
+	</ion-list>
+
+
+	</ion-card>
+	<ion-card>
+		<ion-card-header>
+			<h1><font color="white">Organic Fruits & Vegetables</font></h1>
+		</ion-card-header>
+		<ion-list>
+	<div *ngFor="let item of itemsarray; let i = index ">
+		<button ion-item  *ngIf="item.Type=='Organic Fruits & Vegetables'"(click)="Itemdetails(itemsarray, i)">
+			<h2 style="font-weight: bold;font-size: 10px;"><font color="black" size="4px" weight="bold">ItemName: <font color="#003300" size="5px" weight="bold">{{item.Name}}</font></font></h2>
+			<p style="text-align:right; font-weight: bold; color:#f2073e;">Count: {{item.Count}}</p>
+			<h3>Amount per {{item.quantity}} kg:{{item.amount}}</h3>
+		</button>
+	</div>
+
+	</ion-list>
+
+
+	</ion-card>
+	<ion-card>
+		<ion-card-header>
+			<h1><font color="white">Flowers</font></h1>
+		</ion-card-header>
+		<ion-list>
+	<div *ngFor="let item of itemsarray; let i = index ">
+		<button ion-item  *ngIf="item.Type=='Flowers'"(click)="Itemdetails(itemsarray, i)">
+			<h2 style="font-weight: bold;font-size: 10px;"><font color="black" size="4px" weight="bold">ItemName: <font color="#003300" size="5px" weight="bold">{{item.Name}}</font></font></h2>
+			<p style="text-align:right; font-weight: bold; color:#f2073e;">Count: {{item.Count}}</p>
+			<h3>Amount per {{item.quantity}} kg:{{item.amount}}</h3>
+		</button>
+	</div>
+
+	</ion-list>
+
+
+	</ion-card>
+	<ion-card>
+		<ion-card-header>
+			<h1><font color="white">Vegetables</font></h1>
+		</ion-card-header>
+		<ion-list>
+	<div *ngFor="let item of itemsarray; let i = index ">
+		<button ion-item  *ngIf="item.Type=='Vegetables'"(click)="Itemdetails(itemsarray, i)">
+			<h2 style="font-weight: bold;font-size: 10px;"><font color="black" size="4px" weight="bold">ItemName: <font color="#003300" size="5px" weight="bold">{{item.Name}}</font></font></h2>
+			<p style="text-align:right; font-weight: bold; color:#f2073e;">Count: {{item.Count}}</p>
+			<h3>Amount per {{item.quantity}} kg:{{item.amount}}</h3>
+		</button>
+	</div>
+
+	</ion-list>
+
+
+	</ion-card>
+	<ion-card>
+		<ion-card-header>
+			<h1><font color="white">Mineral Water</font></h1>
+		</ion-card-header>
+		<ion-list>
+	<div *ngFor="let item of itemsarray; let i = index ">
+		<button ion-item  *ngIf="item.Type=='Energy & Health Drinks'"(click)="Itemdetails(itemsarray, i)">
+			<h2 style="font-weight: bold;font-size: 10px;"><font color="black" size="4px" weight="bold">ItemName: <font color="#003300" size="5px" weight="bold">{{item.Name}}</font></font></h2>
+			<p style="text-align:right; font-weight: bold; color:#f2073e;">Count: {{item.Count}}</p>
+			<h3>Amount per {{item.quantity}} kg:{{item.amount}}</h3>
+		</button>
+	</div>
+
+	</ion-list>
+
+
+	</ion-card>
+	<ion-card>
+		<ion-card-header>
+			<h1><font color="white">Soft Drinks</font></h1>
+		</ion-card-header>
+		<ion-list>
+	<div *ngFor="let item of itemsarray; let i = index ">
+		<button ion-item  *ngIf="item.Type=='Soft Drinks'"(click)="Itemdetails(itemsarray, i)">
+			<h2 style="font-weight: bold;font-size: 10px;"><font color="black" size="4px" weight="bold">ItemName: <font color="#003300" size="5px" weight="bold">{{item.Name}}</font></font></h2>
+			<p style="text-align:right; font-weight: bold; color:#f2073e;">Count: {{item.Count}}</p>
+			<h3>Amount per {{item.quantity}} kg:{{item.amount}}</h3>
+		</button>
+	</div>
+
+	</ion-list>
+
+
+	</ion-card>
+	<ion-card>
+		<ion-card-header>
+			<h1><font color="white">Tea & Coffee</font></h1>
+		</ion-card-header>
+		<ion-list>
+	<div *ngFor="let item of itemsarray; let i = index ">
+		<button ion-item  *ngIf="item.Type=='Tea & Coffee'"(click)="Itemdetails(itemsarray, i)">
+			<h2 style="font-weight: bold;font-size: 10px;"><font color="black" size="4px" weight="bold">ItemName: <font color="#003300" size="5px" weight="bold">{{item.Name}}</font></font></h2>
+			<p style="text-align:right; font-weight: bold; color:#f2073e;">Count: {{item.Count}}</p>
+			<h3>Amount per {{item.quantity}} kg:{{item.amount}}</h3>
+		</button>
+	</div>
+
+	</ion-list>
+
+
+	</ion-card>
+	<ion-card>
+		<ion-card-header>
+			<h1><font color="white">Fruit Drinks &  Juices</font></h1>
+		</ion-card-header>
+		<ion-list>
+	<div *ngFor="let item of itemsarray; let i = index ">
+		<button ion-item  *ngIf="item.Type=='Fruit Drinks &  Juices'"(click)="Itemdetails(itemsarray, i)">
+			<h2 style="font-weight: bold;font-size: 10px;"><font color="black" size="4px" weight="bold">ItemName: <font color="#003300" size="5px" weight="bold">{{item.Name}}</font></font></h2>
+			<p style="text-align:right; font-weight: bold; color:#f2073e;">Count: {{item.Count}}</p>
+			<h3>Amount per {{item.quantity}} kg:{{item.amount}}</h3>
+		</button>
+	</div>
+
+	</ion-list>
+
+
+	</ion-card>
+	<ion-card>
+		<ion-card-header>
+			<h1><font color="white">Ayurvedic</font></h1>
+		</ion-card-header>
+		<ion-list>
+	<div *ngFor="let item of itemsarray; let i = index ">
+		<button ion-item  *ngIf="item.Type=='Ayurvedic'"(click)="Itemdetails(itemsarray, i)">
+			<h2 style="font-weight: bold;font-size: 10px;"><font color="black" size="4px" weight="bold">ItemName: <font color="#003300" size="5px" weight="bold">{{item.Name}}</font></font></h2>
+			<p style="text-align:right; font-weight: bold; color:#f2073e;">Count: {{item.Count}}</p>
+			<h3>Amount per {{item.quantity}} kg:{{item.amount}}</h3>
+		</button>
+	</div>
+
+	</ion-list>
+
+
+	</ion-card>
+	<ion-card>
+		<ion-card-header>
+			<h1><font color="white">Organic Beverages</font></h1>
+		</ion-card-header>
+		<ion-list>
+	<div *ngFor="let item of itemsarray; let i = index ">
+		<button ion-item  *ngIf="item.Type=='Organic Beverages'"(click)="Itemdetails(itemsarray, i)">
+			<h2 style="font-weight: bold;font-size: 10px;"><font color="black" size="4px" weight="bold">ItemName: <font color="#003300" size="5px" weight="bold">{{item.Name}}</font></font></h2>
+			<p style="text-align:right; font-weight: bold; color:#f2073e;">Count: {{item.Count}}</p>
+			<h3>Amount per {{item.quantity}} kg:{{item.amount}}</h3>
+		</button>
+	</div>
+
+	</ion-list>
+
+
+	</ion-card>
+	<ion-card>
+		<ion-card-header>
+			<h1><font color="white">Cookies, Rusk & Khari</font></h1>
+		</ion-card-header>
+		<ion-list>
+	<div *ngFor="let item of itemsarray; let i = index ">
+		<button ion-item  *ngIf="item.Type=='Cookies, Rusk & Khari'"(click)="Itemdetails(itemsarray, i)">
+			<h2 style="font-weight: bold;font-size: 10px;"><font color="black" size="4px" weight="bold">ItemName: <font color="#003300" size="5px" weight="bold">{{item.Name}}</font></font></h2>
+			<p style="text-align:right; font-weight: bold; color:#f2073e;">Count: {{item.Count}}</p>
+			<h3>Amount per {{item.quantity}} kg:{{item.amount}}</h3>
+		</button>
+	</div>
+
+	</ion-list>
+
+
+	</ion-card>
+	<ion-card>
+		<ion-card-header>
+			<h1><font color="white">Gourmet Breads</font></h1>
+		</ion-card-header>
+		<ion-list>
+	<div *ngFor="let item of itemsarray; let i = index ">
+		<button ion-item  *ngIf="item.Type=='Gourmet Breads'"(click)="Itemdetails(itemsarray, i)">
+			<h2 style="font-weight: bold;font-size: 10px;"><font color="black" size="4px" weight="bold">ItemName: <font color="#003300" size="5px" weight="bold">{{item.Name}}</font></font></h2>
+			<p style="text-align:right; font-weight: bold; color:#f2073e;">Count: {{item.Count}}</p>
+			<h3>Amount per {{item.quantity}} kg:{{item.amount}}</h3>
+		</button>
+	</div>
+
+	</ion-list>
+
+
+	</ion-card>
+	<ion-card>
+		<ion-card-header>
+			<h1><font color="white">Cakes & Pastries</font></h1>
+		</ion-card-header>
+		<ion-list>
+	<div *ngFor="let item of itemsarray; let i = index ">
+		<button ion-item  *ngIf="item.Type=='Cakes & Pastries'"(click)="Itemdetails(itemsarray, i)">
+			<h2 style="font-weight: bold;font-size: 10px;"><font color="black" size="4px" weight="bold">ItemName: <font color="#003300" size="5px" weight="bold">{{item.Name}}</font></font></h2>
+			<p style="text-align:right; font-weight: bold; color:#f2073e;">Count: {{item.Count}}</p>
+			<h3>Amount per {{item.quantity}} kg:{{item.amount}}</h3>
+		</button>
+	</div>
+
+	</ion-list>
+
+
+	</ion-card>
+	<ion-card>
+		<ion-card-header>
+			<h1><font color="white">Ice Creams & Desserts</font></h1>
+		</ion-card-header>
+		<ion-list>
+	<div *ngFor="let item of itemsarray; let i = index ">
+		<button ion-item  *ngIf="item.Type=='Ice Creams & Desserts'"(click)="Itemdetails(itemsarray, i)">
+			<h2 style="font-weight: bold;font-size: 10px;"><font color="black" size="4px" weight="bold">ItemName: <font color="#003300" size="5px" weight="bold">{{item.Name}}</font></font></h2>
+			<p style="text-align:right; font-weight: bold; color:#f2073e;">Count: {{item.Count}}</p>
+			<h3>Amount per {{item.quantity}} kg:{{item.amount}}</h3>
+		</button>
+	</div>
+
+	</ion-list>
+
+
+	</ion-card>
+	<ion-card>
+		<ion-card-header>
+			<h1><font color="white">Breakfast Cereals</font></h1>
+		</ion-card-header>
+		<ion-list>
+	<div *ngFor="let item of itemsarray; let i = index ">
+		<button ion-item  *ngIf="item.Type=='Breakfast Cereals'"(click)="Itemdetails(itemsarray, i)">
+			<h2 style="font-weight: bold;font-size: 10px;"><font color="black" size="4px" weight="bold">ItemName: <font color="#003300" size="5px" weight="bold">{{item.Name}}</font></font></h2>
+			<p style="text-align:right; font-weight: bold; color:#f2073e;">Count: {{item.Count}}</p>
+			<h3>Amount per {{item.quantity}} kg:{{item.amount}}</h3>
+		</button>
+	</div>
+
+	</ion-list>
+
+
+	</ion-card>
+
+	<ion-card>
+		<ion-card-header>
+			<h1><font color="white">Noodles</font></h1>
+		</ion-card-header>
+		<ion-list>
+	<div *ngFor="let item of itemsarray; let i = index ">
+		<button ion-item  *ngIf="item.Type=='Noodles'"(click)="Itemdetails(itemsarray, i)">
+			<h2 style="font-weight: bold;font-size: 10px;"><font color="black" size="4px" weight="bold">ItemName: <font color="#003300" size="5px" weight="bold">{{item.Name}}</font></font></h2>
+			<p style="text-align:right; font-weight: bold; color:#f2073e;">Count: {{item.Count}}</p>
+			<h3>Amount per {{item.quantity}} kg:{{item.amount}}</h3>
+		</button>
+	</div>
+
+	</ion-list>
+
+
+	</ion-card>
+
+	<ion-card>
+		<ion-card-header>
+			<h1><font color="white">Biscuits</font></h1>
+		</ion-card-header>
+		<ion-list>
+	<div *ngFor="let item of itemsarray; let i = index ">
+		<button ion-item  *ngIf="item.Type=='Biscuits'"(click)="Itemdetails(itemsarray, i)">
+			<h2 style="font-weight: bold;font-size: 10px;"><font color="black" size="4px" weight="bold">ItemName: <font color="#003300" size="5px" weight="bold">{{item.Name}}</font></font></h2>
+			<p style="text-align:right; font-weight: bold; color:#f2073e;">Count: {{item.Count}}</p>
+			<h3>Amount per {{item.quantity}} kg:{{item.amount}}</h3>
+		</button>
+	</div>
+
+	</ion-list>
+
+
+	</ion-card>
+
+
+
+	<ion-card>
+		<ion-card-header>
+			<h1><font color="white">Jams & Spreads</font></h1>
+		</ion-card-header>
+		<ion-list>
+	<div *ngFor="let item of itemsarray; let i = index ">
+		<button ion-item  *ngIf="item.Type=='Jams & Spreads'"(click)="Itemdetails(itemsarray, i)">
+			<h2 style="font-weight: bold;font-size: 10px;"><font color="black" size="4px" weight="bold">ItemName: <font color="#003300" size="5px" weight="bold">{{item.Name}}</font></font></h2>
+			<p style="text-align:right; font-weight: bold; color:#f2073e;">Count: {{item.Count}}</p>
+			<h3>Amount per {{item.quantity}} kg:{{item.amount}}</h3>
+		</button>
+	</div>
+
+	</ion-list>
+
+
+	</ion-card>
+
+
+	<ion-card>
+		<ion-card-header>
+			<h1><font color="white">Pasta & Vermicelli</font></h1>
+		</ion-card-header>
+		<ion-list>
+	<div *ngFor="let item of itemsarray; let i = index ">
+		<button ion-item  *ngIf="item.Type=='Pasta & Vermicelli'"(click)="Itemdetails(itemsarray, i)">
+			<h2 style="font-weight: bold;font-size: 10px;"><font color="black" size="4px" weight="bold">ItemName: <font color="#003300" size="5px" weight="bold">{{item.Name}}</font></font></h2>
+			<p style="text-align:right; font-weight: bold; color:#f2073e;">Count: {{item.Count}}</p>
+			<h3>Amount per {{item.quantity}} kg:{{item.amount}}</h3>
+		</button>
+	</div>
+
+	</ion-list>
+
+
+	</ion-card>
+
+	
+
+	<ion-card>
+		<ion-card-header>
+			<h1><font color="white">Veg Snacks</font></h1>
+		</ion-card-header>
+		<ion-list>
+	<div *ngFor="let item of itemsarray; let i = index ">
+		<button ion-item  *ngIf="item.Type=='Veg Snacks'"(click)="Itemdetails(itemsarray, i)">
+			<h2 style="font-weight: bold;font-size: 10px;"><font color="black" size="4px" weight="bold">ItemName: <font color="#003300" size="5px" weight="bold">{{item.Name}}</font></font></h2>
+			<p style="text-align:right; font-weight: bold; color:#f2073e;">Count: {{item.Count}}</p>
+			<h3>Amount per {{item.quantity}} kg:{{item.amount}}</h3>
+		</button>
+	</div>
+
+	</ion-list>
+
+
+	</ion-card>
+
+	<ion-card>
+		<ion-card-header>
+			<h1><font color="white">Sauces & Ketchup</font></h1>
+		</ion-card-header>
+		<ion-list>
+	<div *ngFor="let item of itemsarray; let i = index ">
+		<button ion-item  *ngIf="item.Type=='Sauces & Ketchup'"(click)="Itemdetails(itemsarray, i)">
+			<h2 style="font-weight: bold;font-size: 10px;"><font color="black" size="4px" weight="bold">ItemName: <font color="#003300" size="5px" weight="bold">{{item.Name}}</font></font></h2>
+			<p style="text-align:right; font-weight: bold; color:#f2073e;">Count: {{item.Count}}</p>
+			<h3>Amount per {{item.quantity}} kg:{{item.amount}}</h3>
+		</button>
+	</div>
+
+	</ion-list>
+
+
+	</ion-card>
+
+	<ion-card>
+		<ion-card-header>
+			<h1><font color="white">Chocolates & Sweets</font></h1>
+		</ion-card-header>
+		<ion-list>
+	<div *ngFor="let item of itemsarray; let i = index ">
+		<button ion-item  *ngIf="item.Type=='Chocolates & Sweets'"(click)="Itemdetails(itemsarray, i)">
+			<h2 style="font-weight: bold;font-size: 10px;"><font color="black" size="4px" weight="bold">ItemName: <font color="#003300" size="5px" weight="bold">{{item.Name}}</font></font></h2>
+			<p style="text-align:right; font-weight: bold; color:#f2073e;">Count: {{item.Count}}</p>
+			<h3>Amount per {{item.quantity}} kg:{{item.amount}}</h3>
+		</button>
+	</div>
+
+	</ion-list>
+
+
+	</ion-card>
+
+	<ion-card>
+		<ion-card-header>
+			<h1><font color="white">Ready To Eat & Cook</font></h1>
+		</ion-card-header>
+		<ion-list>
+	<div *ngFor="let item of itemsarray; let i = index ">
+		<button ion-item  *ngIf="item.Type=='Ready To Eat & Cook'"(click)="Itemdetails(itemsarray, i)">
+			<h2 style="font-weight: bold;font-size: 10px;"><font color="black" size="4px" weight="bold">ItemName: <font color="#003300" size="5px" weight="bold">{{item.Name}}</font></font></h2>
+			<p style="text-align:right; font-weight: bold; color:#f2073e;">Count: {{item.Count}}</p>
+			<h3>Amount per {{item.quantity}} kg:{{item.amount}}</h3>
+		</button>
+	</div>
+
+	</ion-list>
+
+
+	</ion-card>
+
+	<ion-card>
+		<ion-card-header>
+			<h1><font color="white">Baking & Dessert items</font></h1>
+		</ion-card-header>
+		<ion-list>
+	<div *ngFor="let item of itemsarray; let i = index ">
+		<button ion-item  *ngIf="item.Type=='Baking & Dessert items'"(click)="Itemdetails(itemsarray, i)">
+			<h2 style="font-weight: bold;font-size: 10px;"><font color="black" size="4px" weight="bold">ItemName: <font color="#003300" size="5px" weight="bold">{{item.Name}}</font></font></h2>
+			<p style="text-align:right; font-weight: bold; color:#f2073e;">Count: {{item.Count}}</p>
+			<h3>Amount per {{item.quantity}} kg:{{item.amount}}</h3>
+		</button>
+	</div>
+
+	</ion-list>
+
+
+	</ion-card>
+
+	<ion-card>
+		<ion-card-header>
+			<h1><font color="white">Indian Sweets</font></h1>
+		</ion-card-header>
+		<ion-list>
+	<div *ngFor="let item of itemsarray; let i = index ">
+		<button ion-item  *ngIf="item.Type=='Indian Sweets'"(click)="Itemdetails(itemsarray, i)">
+			<h2 style="font-weight: bold;font-size: 10px;"><font color="black" size="4px" weight="bold">ItemName: <font color="#003300" size="5px" weight="bold">{{item.Name}}</font></font></h2>
+			<p style="text-align:right; font-weight: bold; color:#f2073e;">Count: {{item.Count}}</p>
+			<h3>Amount per {{item.quantity}} kg:{{item.amount}}</h3>
+		</button>
+	</div>
+
+	</ion-list>
+
+
+	</ion-card>
+
+	<ion-card>
+		<ion-card-header>
+			<h1><font color="white">Canned Food</font></h1>
+		</ion-card-header>
+		<ion-list>
+	<div *ngFor="let item of itemsarray; let i = index ">
+		<button ion-item  *ngIf="item.Type=='Canned Food'"(click)="Itemdetails(itemsarray, i)">
+			<h2 style="font-weight: bold;font-size: 10px;"><font color="black" size="4px" weight="bold">ItemName: <font color="#003300" size="5px" weight="bold">{{item.Name}}</font></font></h2>
+			<p style="text-align:right; font-weight: bold; color:#f2073e;">Count: {{item.Count}}</p>
+			<h3>Amount per {{item.quantity}} kg:{{item.amount}}</h3>
+		</button>
+	</div>
+
+	</ion-list>
+
+
+	</ion-card>
+
+	<ion-card>
+		<ion-card-header>
+			<h1><font color="white">Picklets</font></h1>
+		</ion-card-header>
+		<ion-list>
+	<div *ngFor="let item of itemsarray; let i = index ">
+		<button ion-item  *ngIf="item.Type=='Picklets'"(click)="Itemdetails(itemsarray, i)">
+			<h2 style="font-weight: bold;font-size: 10px;"><font color="black" size="4px" weight="bold">ItemName: <font color="#003300" size="5px" weight="bold">{{item.Name}}</font></font></h2>
+			<p style="text-align:right; font-weight: bold; color:#f2073e;">Count: {{item.Count}}</p>
+			<h3>Amount per {{item.quantity}} kg:{{item.amount}}</h3>
+		</button>
+	</div>
+
+	</ion-list>
+
+
+	</ion-card>
+
+
+	<ion-card>
+		<ion-card-header>
+			<h1><font color="white">Ayurvedic Food</font></h1>
+		</ion-card-header>
+		<ion-list>
+	<div *ngFor="let item of itemsarray; let i = index ">
+		<button ion-item  *ngIf="item.Type=='Ayurvedic Food'"(click)="Itemdetails(itemsarray, i)">
+			<h2 style="font-weight: bold;font-size: 10px;"><font color="black" size="4px" weight="bold">ItemName: <font color="#003300" size="5px" weight="bold">{{item.Name}}</font></font></h2>
+			<p style="text-align:right; font-weight: bold; color:#f2073e;">Count: {{item.Count}}</p>
+			<h3>Amount per {{item.quantity}} kg:{{item.amount}}</h3>
+		</button>
+	</div>
+
+	</ion-list>
+
+
+	</ion-card>
+
+	<ion-card>
+		<ion-card-header>
+			<h1><font color="white">Health & Nutrition</font></h1>
+		</ion-card-header>
+		<ion-list>
+	<div *ngFor="let item of itemsarray; let i = index ">
+		<button ion-item  *ngIf="item.Type=='Health & Nutrition'"(click)="Itemdetails(itemsarray, i)">
+			<h2 style="font-weight: bold;font-size: 10px;"><font color="black" size="4px" weight="bold">ItemName: <font color="#003300" size="5px" weight="bold">{{item.Name}}</font></font></h2>
+			<p style="text-align:right; font-weight: bold; color:#f2073e;">Count: {{item.Count}}</p>
+			<h3>Amount per {{item.quantity}} kg:{{item.amount}}</h3>
+		</button>
+	</div>
+
+	</ion-list>
+
+
+	</ion-card>
+
+	<ion-card>
+		<ion-card-header>
+			<h1><font color="white">Feminine Hygiene</font></h1>
+		</ion-card-header>
+		<ion-list>
+	<div *ngFor="let item of itemsarray; let i = index ">
+		<button ion-item  *ngIf="item.Type=='Feminine Hygiene'"(click)="Itemdetails(itemsarray, i)">
+			<h2 style="font-weight: bold;font-size: 10px;"><font color="black" size="4px" weight="bold">ItemName: <font color="#003300" size="5px" weight="bold">{{item.Name}}</font></font></h2>
+			<p style="text-align:right; font-weight: bold; color:#f2073e;">Count: {{item.Count}}</p>
+			<h3>Amount per {{item.quantity}} kg:{{item.amount}}</h3>
+		</button>
+	</div>
+
+	</ion-list>
+
+
+	</ion-card>
+
+	<ion-card>
+		<ion-card-header>
+			<h1><font color="white">Oral Care</font></h1>
+		</ion-card-header>
+		<ion-list>
+	<div *ngFor="let item of itemsarray; let i = index ">
+		<button ion-item  *ngIf="item.Type=='Oral Care'"(click)="Itemdetails(itemsarray, i)">
+			<h2 style="font-weight: bold;font-size: 10px;"><font color="black" size="4px" weight="bold">ItemName: <font color="#003300" size="5px" weight="bold">{{item.Name}}</font></font></h2>
+			<p style="text-align:right; font-weight: bold; color:#f2073e;">Count: {{item.Count}}</p>
+			<h3>Amount per {{item.quantity}} kg:{{item.amount}}</h3>
+		</button>
+	</div>
+
+	</ion-list>
+
+
+	</ion-card>
+
+	<ion-card>
+		<ion-card-header>
+			<h1><font color="white">Bath, Face & Hand Wash</font></h1>
+		</ion-card-header>
+		<ion-list>
+	<div *ngFor="let item of itemsarray; let i = index ">
+		<button ion-item  *ngIf="item.Type=='Bath, Face & Hand Wash'"(click)="Itemdetails(itemsarray, i)">
+			<h2 style="font-weight: bold;font-size: 10px;"><font color="black" size="4px" weight="bold">ItemName: <font color="#003300" size="5px" weight="bold">{{item.Name}}</font></font></h2>
+			<p style="text-align:right; font-weight: bold; color:#f2073e;">Count: {{item.Count}}</p>
+			<h3>Amount per {{item.quantity}} kg:{{item.amount}}</h3>
+		</button>
+	</div>
+
+	</ion-list>
+
+
+	</ion-card>
+
+	<ion-card>
+		<ion-card-header>
+			<h1><font color="white">Hair Care</font></h1>
+		</ion-card-header>
+		<ion-list>
+	<div *ngFor="let item of itemsarray; let i = index ">
+		<button ion-item  *ngIf="item.Type=='Hair Care'"(click)="Itemdetails(itemsarray, i)">
+			<h2 style="font-weight: bold;font-size: 10px;"><font color="black" size="4px" weight="bold">ItemName: <font color="#003300" size="5px" weight="bold">{{item.Name}}</font></font></h2>
+			<p style="text-align:right; font-weight: bold; color:#f2073e;">Count: {{item.Count}}</p>
+			<h3>Amount per {{item.quantity}} kg:{{item.amount}}</h3>
+		</button>
+	</div>
+
+	</ion-list>
+
+
+	</ion-card>
+
+	<ion-card>
+		<ion-card-header>
+			<h1><font color="white">Health & Medicine</font></h1>
+		</ion-card-header>
+		<ion-list>
+	<div *ngFor="let item of itemsarray; let i = index ">
+		<button ion-item  *ngIf="item.Type=='Health & Medicine'"(click)="Itemdetails(itemsarray, i)">
+			<h2 style="font-weight: bold;font-size: 10px;"><font color="black" size="4px" weight="bold">ItemName: <font color="#003300" size="5px" weight="bold">{{item.Name}}</font></font></h2>
+			<p style="text-align:right; font-weight: bold; color:#f2073e;">Count: {{item.Count}}</p>
+			<h3>Amount per {{item.quantity}} kg:{{item.amount}}</h3>
+		</button>
+	</div>
+
+	</ion-list>
+
+
+	</ion-card>
+
+	<ion-card>
+		<ion-card-header>
+			<h1><font color="white">Skin Care</font></h1>
+		</ion-card-header>
+		<ion-list>
+	<div *ngFor="let item of itemsarray; let i = index ">
+		<button ion-item  *ngIf="item.Type=='Skin Care'"(click)="Itemdetails(itemsarray, i)">
+			<h2 style="font-weight: bold;font-size: 10px;"><font color="black" size="4px" weight="bold">ItemName: <font color="#003300" size="5px" weight="bold">{{item.Name}}</font></font></h2>
+			<p style="text-align:right; font-weight: bold; color:#f2073e;">Count: {{item.Count}}</p>
+			<h3>Amount per {{item.quantity}} kg:{{item.amount}}</h3>
+		</button>
+	</div>
+
+	</ion-list>
+
+
+	</ion-card>
+
+
+
+	<ion-card>
+		<ion-card-header>
+			<h1><font color="white">Mens Grooming</font></h1>
+		</ion-card-header>
+		<ion-list>
+	<div *ngFor="let item of itemsarray; let i = index ">
+		<button ion-item  *ngIf="item.Type=='Mens Grooming'"(click)="Itemdetails(itemsarray, i)">
+			<h2 style="font-weight: bold;font-size: 10px;"><font color="black" size="4px" weight="bold">ItemName: <font color="#003300" size="5px" weight="bold">{{item.Name}}</font></font></h2>
+			<p style="text-align:right; font-weight: bold; color:#f2073e;">Count: {{item.Count}}</p>
+			<h3>Amount per {{item.quantity}} kg:{{item.amount}}</h3>
+		</button>
+	</div>
+
+	</ion-list>
+
+
+	</ion-card>
+
+	<ion-card>
+		<ion-card-header>
+			<h1><font color="white">Makeup</font></h1>
+		</ion-card-header>
+		<ion-list>
+	<div *ngFor="let item of itemsarray; let i = index ">
+		<button ion-item  *ngIf="item.Type=='Makeup'"(click)="Itemdetails(itemsarray, i)">
+			<h2 style="font-weight: bold;font-size: 10px;"><font color="black" size="4px" weight="bold">ItemName: <font color="#003300" size="5px" weight="bold">{{item.Name}}</font></font></h2>
+			<p style="text-align:right; font-weight: bold; color:#f2073e;">Count: {{item.Count}}</p>
+			<h3>Amount per {{item.quantity}} kg:{{item.amount}}</h3>
+		</button>
+	</div>
+
+	</ion-list>
+
+
+	</ion-card>
+
+	<ion-card>
+		<ion-card-header>
+			<h1><font color="white">Deodorant & Fragrance</font></h1>
+		</ion-card-header>
+		<ion-list>
+	<div *ngFor="let item of itemsarray; let i = index ">
+		<button ion-item  *ngIf="item.Type=='Deodorant & Fragrance'"(click)="Itemdetails(itemsarray, i)">
+			<h2 style="font-weight: bold;font-size: 10px;"><font color="black" size="4px" weight="bold">ItemName: <font color="#003300" size="5px" weight="bold">{{item.Name}}</font></font></h2>
+			<p style="text-align:right; font-weight: bold; color:#f2073e;">Count: {{item.Count}}</p>
+			<h3>Amount per {{item.quantity}} kg:{{item.amount}}</h3>
+		</button>
+	</div>
+
+	</ion-list>
+
+
+	</ion-card>
+
+	<ion-card>
+		<ion-card-header>
+			<h1><font color="white">Kitchen & Dining</font></h1>
+		</ion-card-header>
+		<ion-list>
+	<div *ngFor="let item of itemsarray; let i = index ">
+		<button ion-item  *ngIf="item.Type=='Kitchen & Dining'"(click)="Itemdetails(itemsarray, i)">
+			<h2 style="font-weight: bold;font-size: 10px;"><font color="black" size="4px" weight="bold">ItemName: <font color="#003300" size="5px" weight="bold">{{item.Name}}</font></font></h2>
+			<p style="text-align:right; font-weight: bold; color:#f2073e;">Count: {{item.Count}}</p>
+			<h3>Amount per {{item.quantity}} kg:{{item.amount}}</h3>
+		</button>
+	</div>
+
+	</ion-list>
+
+
+	</ion-card>
+
+	<ion-card>
+		<ion-card-header>
+			<h1><font color="white">Detergents</font></h1>
+		</ion-card-header>
+		<ion-list>
+	<div *ngFor="let item of itemsarray; let i = index ">
+		<button ion-item  *ngIf="item.Type=='Detergents'"(click)="Itemdetails(itemsarray, i)">
+			<h2 style="font-weight: bold;font-size: 10px;"><font color="black" size="4px" weight="bold">ItemName: <font color="#003300" size="5px" weight="bold">{{item.Name}}</font></font></h2>
+			<p style="text-align:right; font-weight: bold; color:#f2073e;">Count: {{item.Count}}</p>
+			<h3>Amount per {{item.quantity}} kg:{{item.amount}}</h3>
+		</button>
+	</div>
+
+	</ion-list>
+
+
+	</ion-card>
+
+	<ion-card>
+		<ion-card-header>
+			<h1><font color="white">Utesil Cleaners</font></h1>
+		</ion-card-header>
+		<ion-list>
+	<div *ngFor="let item of itemsarray; let i = index ">
+		<button ion-item  *ngIf="item.Type=='Utesil Cleaners'"(click)="Itemdetails(itemsarray, i)">
+			<h2 style="font-weight: bold;font-size: 10px;"><font color="black" size="4px" weight="bold">ItemName: <font color="#003300" size="5px" weight="bold">{{item.Name}}</font></font></h2>
+			<p style="text-align:right; font-weight: bold; color:#f2073e;">Count: {{item.Count}}</p>
+			<h3>Amount per {{item.quantity}} kg:{{item.amount}}</h3>
+		</button>
+	</div>
+
+	</ion-list>
+
+
+	</ion-card>
+
+	<ion-card>
+		<ion-card-header>
+			<h1><font color="white">Toilets, Floor & Other Cleaners</font></h1>
+		</ion-card-header>
+		<ion-list>
+	<div *ngFor="let item of itemsarray; let i = index ">
+		<button ion-item  *ngIf="item.Type=='Toilets, Floor & Other Cleaners'"(click)="Itemdetails(itemsarray, i)">
+			<h2 style="font-weight: bold;font-size: 10px;"><font color="black" size="4px" weight="bold">ItemName: <font color="#003300" size="5px" weight="bold">{{item.Name}}</font></font></h2>
+			<p style="text-align:right; font-weight: bold; color:#f2073e;">Count: {{item.Count}}</p>
+			<h3>Amount per {{item.quantity}} kg:{{item.amount}}</h3>
+		</button>
+	</div>
+
+	</ion-list>
+
+
+	</ion-card>
+
+	<ion-card>
+		<ion-card-header>
+			<h1><font color="white">Disposables, Garbage Bag</font></h1>
+		</ion-card-header>
+		<ion-list>
+	<div *ngFor="let item of itemsarray; let i = index ">
+		<button ion-item  *ngIf="item.Type=='Disposables, Garbage Bag'"(click)="Itemdetails(itemsarray, i)">
+			<h2 style="font-weight: bold;font-size: 10px;"><font color="black" size="4px" weight="bold">ItemName: <font color="#003300" size="5px" weight="bold">{{item.Name}}</font></font></h2>
+			<p style="text-align:right; font-weight: bold; color:#f2073e;">Count: {{item.Count}}</p>
+			<h3>Amount per {{item.quantity}} kg:{{item.amount}}</h3>
+		</button>
+	</div>
+
+	</ion-list>
+
+
+	</ion-card>
+
+	<ion-card>
+		<ion-card-header>
+			<h1><font color="white">Paper & Disposible</font></h1>
+		</ion-card-header>
+		<ion-list>
+	<div *ngFor="let item of itemsarray; let i = index ">
+		<button ion-item  *ngIf="item.Type=='Paper & Disposible'"(click)="Itemdetails(itemsarray, i)">
+			<h2 style="font-weight: bold;font-size: 10px;"><font color="black" size="4px" weight="bold">ItemName: <font color="#003300" size="5px" weight="bold">{{item.Name}}</font></font></h2>
+			<p style="text-align:right; font-weight: bold; color:#f2073e;">Count: {{item.Count}}</p>
+			<h3>Amount per {{item.quantity}} kg:{{item.amount}}</h3>
+		</button>
+	</div>
+
+	</ion-list>
+
+
+	</ion-card>
+
+	<ion-card>
+		<ion-card-header>
+			<h1><font color="white">Repellents & Fresheners</font></h1>
+		</ion-card-header>
+		<ion-list>
+	<div *ngFor="let item of itemsarray; let i = index ">
+		<button ion-item  *ngIf="item.Type=='Repellents & Fresheners'"(click)="Itemdetails(itemsarray, i)">
+			<h2 style="font-weight: bold;font-size: 10px;"><font color="black" size="4px" weight="bold">ItemName: <font color="#003300" size="5px" weight="bold">{{item.Name}}</font></font></h2>
+			<p style="text-align:right; font-weight: bold; color:#f2073e;">Count: {{item.Count}}</p>
+			<h3>Amount per {{item.quantity}} kg:{{item.amount}}</h3>
+		</button>
+	</div>
+
+	</ion-list>
+
+
+	</ion-card>
+
+	<ion-card>
+		<ion-card-header>
+			<h1><font color="white">Plasticware</font></h1>
+		</ion-card-header>
+		<ion-list>
+	<div *ngFor="let item of itemsarray; let i = index ">
+		<button ion-item  *ngIf="item.Type=='Plasticware'"(click)="Itemdetails(itemsarray, i)">
+			<h2 style="font-weight: bold;font-size: 10px;"><font color="black" size="4px" weight="bold">ItemName: <font color="#003300" size="5px" weight="bold">{{item.Name}}</font></font></h2>
+			<p style="text-align:right; font-weight: bold; color:#f2073e;">Count: {{item.Count}}</p>
+			<h3>Amount per {{item.quantity}} kg:{{item.amount}}</h3>
+		</button>
+	</div>
+
+	</ion-list>
+
+
+	</ion-card>
+
+	<ion-card>
+		<ion-card-header>
+			<h1><font color="white">Cleaning Accessories</font></h1>
+		</ion-card-header>
+		<ion-list>
+	<div *ngFor="let item of itemsarray; let i = index ">
+		<button ion-item  *ngIf="item.Type=='Cleaning Accessories'"(click)="Itemdetails(itemsarray, i)">
+			<h2 style="font-weight: bold;font-size: 10px;"><font color="black" size="4px" weight="bold">ItemName: <font color="#003300" size="5px" weight="bold">{{item.Name}}</font></font></h2>
+			<p style="text-align:right; font-weight: bold; color:#f2073e;">Count: {{item.Count}}</p>
+			<h3>Amount per {{item.quantity}} kg:{{item.amount}}</h3>
+		</button>
+	</div>
+
+	</ion-list>
+
+
+	</ion-card>
+
+	<ion-card>
+		<ion-card-header>
+			<h1><font color="white">Pet Care</font></h1>
+		</ion-card-header>
+		<ion-list>
+	<div *ngFor="let item of itemsarray; let i = index ">
+		<button ion-item  *ngIf="item.Type=='Pet Care'"(click)="Itemdetails(itemsarray, i)">
+			<h2 style="font-weight: bold;font-size: 10px;"><font color="black" size="4px" weight="bold">ItemName: <font color="#003300" size="5px" weight="bold">{{item.Name}}</font></font></h2>
+			<p style="text-align:right; font-weight: bold; color:#f2073e;">Count: {{item.Count}}</p>
+			<h3>Amount per {{item.quantity}} kg:{{item.amount}}</h3>
+		</button>
+	</div>
+
+	</ion-list>
+
+
+	</ion-card>
+
+	<ion-card>
+		<ion-card-header>
+			<h1><font color="white">Shoe Care</font></h1>
+		</ion-card-header>
+		<ion-list>
+	<div *ngFor="let item of itemsarray; let i = index ">
+		<button ion-item  *ngIf="item.Type=='Shoe Care'"(click)="Itemdetails(itemsarray, i)">
+			<h2 style="font-weight: bold;font-size: 10px;"><font color="black" size="4px" weight="bold">ItemName: <font color="#003300" size="5px" weight="bold">{{item.Name}}</font></font></h2>
+			<p style="text-align:right; font-weight: bold; color:#f2073e;">Count: {{item.Count}}</p>
+			<h3>Amount per {{item.quantity}} kg:{{item.amount}}</h3>
+		</button>
+	</div>
+
+	</ion-list>
+
+
+	</ion-card>
+
+	<ion-card>
+		<ion-card-header>
+			<h1><font color="white">Cookware</font></h1>
+		</ion-card-header>
+		<ion-list>
+	<div *ngFor="let item of itemsarray; let i = index ">
+		<button ion-item  *ngIf="item.Type=='Cookware'"(click)="Itemdetails(itemsarray, i)">
+			<h2 style="font-weight: bold;font-size: 10px;"><font color="black" size="4px" weight="bold">ItemName: <font color="#003300" size="5px" weight="bold">{{item.Name}}</font></font></h2>
+			<p style="text-align:right; font-weight: bold; color:#f2073e;">Count: {{item.Count}}</p>
+			<h3>Amount per {{item.quantity}} kg:{{item.amount}}</h3>
+		</button>
+	</div>
+
+	</ion-list>
+
+
+	</ion-card>
+
+	<ion-card>
+		<ion-card-header>
+			<h1><font color="white">Pooja Needs</font></h1>
+		</ion-card-header>
+		<ion-list>
+	<div *ngFor="let item of itemsarray; let i = index ">
+		<button ion-item  *ngIf="item.Type=='Pooja Needs'"(click)="Itemdetails(itemsarray, i)">
+			<h2 style="font-weight: bold;font-size: 10px;"><font color="black" size="4px" weight="bold">ItemName: <font color="#003300" size="5px" weight="bold">{{item.Name}}</font></font></h2>
+			<p style="text-align:right; font-weight: bold; color:#f2073e;">Count: {{item.Count}}</p>
+			<h3>Amount per {{item.quantity}} kg:{{item.amount}}</h3>
+		</button>
+	</div>
+
+	</ion-list>
+
+
+	</ion-card>
+
+	<ion-card>
+		<ion-card-header>
+			<h1><font color="white">Electricals</font></h1>
+		</ion-card-header>
+		<ion-list>
+	<div *ngFor="let item of itemsarray; let i = index ">
+		<button ion-item  *ngIf="item.Type=='Electricals'"(click)="Itemdetails(itemsarray, i)">
+			<h2 style="font-weight: bold;font-size: 10px;"><font color="black" size="4px" weight="bold">ItemName: <font color="#003300" size="5px" weight="bold">{{item.Name}}</font></font></h2>
+			<p style="text-align:right; font-weight: bold; color:#f2073e;">Count: {{item.Count}}</p>
+			<h3>Amount per {{item.quantity}} kg:{{item.amount}}</h3>
+		</button>
+	</div>
+
+	</ion-list>
+
+
+	</ion-card>
+
+	<ion-card>
+		<ion-card-header>
+			<h1><font color="white">Kitchen Tools</font></h1>
+		</ion-card-header>
+		<ion-list>
+	<div *ngFor="let item of itemsarray; let i = index ">
+		<button ion-item  *ngIf="item.Type=='Kitchen Tools'"(click)="Itemdetails(itemsarray, i)">
+			<h2 style="font-weight: bold;font-size: 10px;"><font color="black" size="4px" weight="bold">ItemName: <font color="#003300" size="5px" weight="bold">{{item.Name}}</font></font></h2>
+			<p style="text-align:right; font-weight: bold; color:#f2073e;">Count: {{item.Count}}</p>
+			<h3>Amount per {{item.quantity}} kg:{{item.amount}}</h3>
+		</button>
+	</div>
+
+	</ion-list>
+
+
+	</ion-card>
+
+	<ion-card>
+		<ion-card-header>
+			<h1><font color="white">Car & Shoe Care</font></h1>
+		</ion-card-header>
+		<ion-list>
+	<div *ngFor="let item of itemsarray; let i = index ">
+		<button ion-item  *ngIf="item.Type=='Car & Shoe Care'"(click)="Itemdetails(itemsarray, i)">
+			<h2 style="font-weight: bold;font-size: 10px;"><font color="black" size="4px" weight="bold">ItemName: <font color="#003300" size="5px" weight="bold">{{item.Name}}</font></font></h2>
+			<p style="text-align:right; font-weight: bold; color:#f2073e;">Count: {{item.Count}}</p>
+			<h3>Amount per {{item.quantity}} kg:{{item.amount}}</h3>
+		</button>
+	</div>
+
+	</ion-list>
+
+
+	</ion-card>
+
+	<ion-card>
+		<ion-card-header>
+			<h1><font color="white">Serveware</font></h1>
+		</ion-card-header>
+		<ion-list>
+	<div *ngFor="let item of itemsarray; let i = index ">
+		<button ion-item  *ngIf="item.Type=='Serveware'"(click)="Itemdetails(itemsarray, i)">
+			<h2 style="font-weight: bold;font-size: 10px;"><font color="black" size="4px" weight="bold">ItemName: <font color="#003300" size="5px" weight="bold">{{item.Name}}</font></font></h2>
+			<p style="text-align:right; font-weight: bold; color:#f2073e;">Count: {{item.Count}}</p>
+			<h3>Amount per {{item.quantity}} kg:{{item.amount}}</h3>
+		</button>
+	</div>
+
+	</ion-list>
+
+
+	</ion-card>
+
+	<ion-card>
+		<ion-card-header>
+			<h1><font color="white">Gardening Needs</font></h1>
+		</ion-card-header>
+		<ion-list>
+	<div *ngFor="let item of itemsarray; let i = index ">
+		<button ion-item  *ngIf="item.Type=='Gardening Needs'"(click)="Itemdetails(itemsarray, i)">
+			<h2 style="font-weight: bold;font-size: 10px;"><font color="black" size="4px" weight="bold">ItemName: <font color="#003300" size="5px" weight="bold">{{item.Name}}</font></font></h2>
+			<p style="text-align:right; font-weight: bold; color:#f2073e;">Count: {{item.Count}}</p>
+			<h3>Amount per {{item.quantity}} kg:{{item.amount}}</h3>
+		</button>
+	</div>
+
+	</ion-list>
+
+
+	</ion-card>
+
+	<ion-card>
+		<ion-card-header>
+			<h1><font color="white">Back To School</font></h1>
+		</ion-card-header>
+		<ion-list>
+	<div *ngFor="let item of itemsarray; let i = index ">
+		<button ion-item  *ngIf="item.Type=='Back To School'"(click)="Itemdetails(itemsarray, i)">
+			<h2 style="font-weight: bold;font-size: 10px;"><font color="black" size="4px" weight="bold">ItemName: <font color="#003300" size="5px" weight="bold">{{item.Name}}</font></font></h2>
+			<p style="text-align:right; font-weight: bold; color:#f2073e;">Count: {{item.Count}}</p>
+			<h3>Amount per {{item.quantity}} kg:{{item.amount}}</h3>
+		</button>
+	</div>
+
+	</ion-list>
+
+
+	</ion-card>
+
+	<ion-card>
+		<ion-card-header>
+			<h1><font color="white">Utilities</font></h1>
+		</ion-card-header>
+		<ion-list>
+	<div *ngFor="let item of itemsarray; let i = index ">
+		<button ion-item  *ngIf="item.Type=='Utilities'"(click)="Itemdetails(itemsarray, i)">
+			<h2 style="font-weight: bold;font-size: 10px;"><font color="black" size="4px" weight="bold">ItemName: <font color="#003300" size="5px" weight="bold">{{item.Name}}</font></font></h2>
+			<p style="text-align:right; font-weight: bold; color:#f2073e;">Count: {{item.Count}}</p>
+			<h3>Amount per {{item.quantity}} kg:{{item.amount}}</h3>
+		</button>
+	</div>
+
+	</ion-list>
+
+
+	</ion-card>
+
+		<ion-card>
+		<ion-card-header>
+			<h1><font color="white">Gifting</font></h1>
+		</ion-card-header>
+		<ion-list>
+	<div *ngFor="let item of itemsarray; let i = index ">
+		<button ion-item  *ngIf="item.Type=='Gifting'"(click)="Itemdetails(itemsarray, i)">
+			<h2 style="font-weight: bold;font-size: 10px;"><font color="black" size="4px" weight="bold">ItemName: <font color="#003300" size="5px" weight="bold">{{item.Name}}</font></font></h2>
+			<p style="text-align:right; font-weight: bold; color:#f2073e;">Count: {{item.Count}}</p>
+			<h3>Amount per {{item.quantity}} kg:{{item.amount}}</h3>
+		</button>
+	</div>
+
+	</ion-list>
+
+
+	</ion-card>
+
+	<ion-card>
+		<ion-card-header>
+			<h1><font color="white">Safty Accessories</font></h1>
+		</ion-card-header>
+		<ion-list>
+	<div *ngFor="let item of itemsarray; let i = index ">
+		<button ion-item  *ngIf="item.Type=='Safty Accessories'"(click)="Itemdetails(itemsarray, i)">
+			<h2 style="font-weight: bold;font-size: 10px;"><font color="black" size="4px" weight="bold">ItemName: <font color="#003300" size="5px" weight="bold">{{item.Name}}</font></font></h2>
+			<p style="text-align:right; font-weight: bold; color:#f2073e;">Count: {{item.Count}}</p>
+			<h3>Amount per {{item.quantity}} kg:{{item.amount}}</h3>
+		</button>
+	</div>
+
+	</ion-list>
+
+
+	</ion-card>
+
+	<ion-card>
+		<ion-card-header>
+			<h1><font color="white">Car Care</font></h1>
+		</ion-card-header>
+		<ion-list>
+	<div *ngFor="let item of itemsarray; let i = index ">
+		<button ion-item  *ngIf="item.Type=='Car Care'"(click)="Itemdetails(itemsarray, i)">
+			<h2 style="font-weight: bold;font-size: 10px;"><font color="black" size="4px" weight="bold">ItemName: <font color="#003300" size="5px" weight="bold">{{item.Name}}</font></font></h2>
+			<p style="text-align:right; font-weight: bold; color:#f2073e;">Count: {{item.Count}}</p>
+			<h3>Amount per {{item.quantity}} kg:{{item.amount}}</h3>
+		</button>
+	</div>
+
+	</ion-list>
+
+
+	</ion-card>
+
+	<ion-card>
+		<ion-card-header>
+			<h1><font color="white">Kitchen Ware</font></h1>
+		</ion-card-header>
+		<ion-list>
+	<div *ngFor="let item of itemsarray; let i = index ">
+		<button ion-item  *ngIf="item.Type=='Kitchen Ware'"(click)="Itemdetails(itemsarray, i)">
+			<h2 style="font-weight: bold;font-size: 10px;"><font color="black" size="4px" weight="bold">ItemName: <font color="#003300" size="5px" weight="bold">{{item.Name}}</font></font></h2>
+			<p style="text-align:right; font-weight: bold; color:#f2073e;">Count: {{item.Count}}</p>
+			<h3>Amount per {{item.quantity}} kg:{{item.amount}}</h3>
+		</button>
+	</div>
+
+	</ion-list>
+
+
+	</ion-card>
+
+	<ion-card>
+		<ion-card-header>
+			<h1><font color="white">Other Accessories</font></h1>
+		</ion-card-header>
+		<ion-list>
+	<div *ngFor="let item of itemsarray; let i = index ">
+		<button ion-item  *ngIf="item.Type=='Other Accessories'"(click)="Itemdetails(itemsarray, i)">
+			<h2 style="font-weight: bold;font-size: 10px;"><font color="black" size="4px" weight="bold">ItemName: <font color="#003300" size="5px" weight="bold">{{item.Name}}</font></font></h2>
+			<p style="text-align:right; font-weight: bold; color:#f2073e;">Count: {{item.Count}}</p>
+			<h3>Amount per {{item.quantity}} kg:{{item.amount}}</h3>
+		</button>
+	</div>
+
+	</ion-list>
+
+
+	</ion-card>
+
+	<ion-card>
+		<ion-card-header>
+			<h1><font color="white">Crackers</font></h1>
+		</ion-card-header>
+		<ion-list>
+	<div *ngFor="let item of itemsarray; let i = index ">
+		<button ion-item  *ngIf="item.Type=='Crackers'"(click)="Itemdetails(itemsarray, i)">
+			<h2 style="font-weight: bold;font-size: 10px;"><font color="black" size="4px" weight="bold">ItemName: <font color="#003300" size="5px" weight="bold">{{item.Name}}</font></font></h2>
+			<p style="text-align:right; font-weight: bold; color:#f2073e;">Count: {{item.Count}}</p>
+			<h3>Amount per {{item.quantity}} kg:{{item.amount}}</h3>
+		</button>
+	</div>
+
+	</ion-list>
+
+
+	</ion-card>
+
+	<ion-card>
+		<ion-card-header>
+			<h1><font color="white">Party & Festival Needs</font></h1>
+		</ion-card-header>
+		<ion-list>
+	<div *ngFor="let item of itemsarray; let i = index ">
+		<button ion-item  *ngIf="item.Type=='Party & Festival Needs'"(click)="Itemdetails(itemsarray, i)">
+			<h2 style="font-weight: bold;font-size: 10px;"><font color="black" size="4px" weight="bold">ItemName: <font color="#003300" size="5px" weight="bold">{{item.Name}}</font></font></h2>
+			<p style="text-align:right; font-weight: bold; color:#f2073e;">Count: {{item.Count}}</p>
+			<h3>Amount per {{item.quantity}} kg:{{item.amount}}</h3>
+		</button>
+	</div>
+
+	</ion-list>
+
+
+	</ion-card>
+
+	<ion-card>
+		<ion-card-header>
+			<h1><font color="white">Feminine Hygiene</font></h1>
+		</ion-card-header>
+		<ion-list>
+	<div *ngFor="let item of itemsarray; let i = index ">
+		<button ion-item  *ngIf="item.Type=='Feminine Hygiene'"(click)="Itemdetails(itemsarray, i)">
+			<h2 style="font-weight: bold;font-size: 10px;"><font color="black" size="4px" weight="bold">ItemName: <font color="#003300" size="5px" weight="bold">{{item.Name}}</font></font></h2>
+			<p style="text-align:right; font-weight: bold; color:#f2073e;">Count: {{item.Count}}</p>
+			<h3>Amount per {{item.quantity}} kg:{{item.amount}}</h3>
+		</button>
+	</div>
+
+	</ion-list>
+
+
+	</ion-card>
+
+	<ion-card>
+		<ion-card-header>
+			<h1><font color="white">Raincoat</font></h1>
+		</ion-card-header>
+		<ion-list>
+	<div *ngFor="let item of itemsarray; let i = index ">
+		<button ion-item  *ngIf="item.Type=='Raincoat'"(click)="Itemdetails(itemsarray, i)">
+			<h2 style="font-weight: bold;font-size: 10px;"><font color="black" size="4px" weight="bold">ItemName: <font color="#003300" size="5px" weight="bold">{{item.Name}}</font></font></h2>
+			<p style="text-align:right; font-weight: bold; color:#f2073e;">Count: {{item.Count}}</p>
+			<h3>Amount per {{item.quantity}} kg:{{item.amount}}</h3>
+		</button>
+	</div>
+
+	</ion-list>
+
+
+	</ion-card>
+
+	<ion-card>
+		<ion-card-header>
+			<h1><font color="white">Oils & Vinegar</font></h1>
+		</ion-card-header>
+		<ion-list>
+	<div *ngFor="let item of itemsarray; let i = index ">
+		<button ion-item  *ngIf="item.Type=='Oils & Vinegar'"(click)="Itemdetails(itemsarray, i)">
+			<h2 style="font-weight: bold;font-size: 10px;"><font color="black" size="4px" weight="bold">ItemName: <font color="#003300" size="5px" weight="bold">{{item.Name}}</font></font></h2>
+			<p style="text-align:right; font-weight: bold; color:#f2073e;">Count: {{item.Count}}</p>
+			<h3>Amount per {{item.quantity}} kg:{{item.amount}}</h3>
+		</button>
+	</div>
+
+	</ion-list>
+
+
+	</ion-card>
+
+	<ion-card>
+		<ion-card-header>
+			<h1><font color="white">Dairy & Cheese</font></h1>
+		</ion-card-header>
+		<ion-list>
+	<div *ngFor="let item of itemsarray; let i = index ">
+		<button ion-item  *ngIf="item.Type=='Dairy & Cheese'"(click)="Itemdetails(itemsarray, i)">
+			<h2 style="font-weight: bold;font-size: 10px;"><font color="black" size="4px" weight="bold">ItemName: <font color="#003300" size="5px" weight="bold">{{item.Name}}</font></font></h2>
+			<p style="text-align:right; font-weight: bold; color:#f2073e;">Count: {{item.Count}}</p>
+			<h3>Amount per {{item.quantity}} kg:{{item.amount}}</h3>
+		</button>
+	</div>
+
+	</ion-list>
+
+
+	</ion-card>
+
+	<ion-card>
+		<ion-card-header>
+			<h1><font color="white">Snacks, Dry Fruits, Nuts</font></h1>
+		</ion-card-header>
+		<ion-list>
+	<div *ngFor="let item of itemsarray; let i = index ">
+		<button ion-item  *ngIf="item.Type=='Snacks, Dry Fruits, Nuts'"(click)="Itemdetails(itemsarray, i)">
+			<h2 style="font-weight: bold;font-size: 10px;"><font color="black" size="4px" weight="bold">ItemName: <font color="#003300" size="5px" weight="bold">{{item.Name}}</font></font></h2>
+			<p style="text-align:right; font-weight: bold; color:#f2073e;">Count: {{item.Count}}</p>
+			<h3>Amount per {{item.quantity}} kg:{{item.amount}}</h3>
+		</button>
+	</div>
+
+	</ion-list>
+	</ion-card>
+
+
+
+	<ion-card>
+		<ion-card-header>
+			<h1><font color="white">Pasta, Soup & Noodles</font></h1>
+		</ion-card-header>
+		<ion-list>
+	<div *ngFor="let item of itemsarray; let i = index ">
+		<button ion-item  *ngIf="item.Type=='Pasta, Soup & Noodles'"(click)="Itemdetails(itemsarray, i)">
+			<h2 style="font-weight: bold;font-size: 10px;"><font color="black" size="4px" weight="bold">ItemName: <font color="#003300" size="5px" weight="bold">{{item.Name}}</font></font></h2>
+			<p style="text-align:right; font-weight: bold; color:#f2073e;">Count: {{item.Count}}</p>
+			<h3>Amount per {{item.quantity}} kg:{{item.amount}}</h3>
+		</button>
+	</div>
+
+	</ion-list>
+	</ion-card>
+	
+
+	<ion-card>
+		<ion-card-header>
+			<h1><font color="white">Chocolates & Biscuits</font></h1>
+		</ion-card-header>
+		<ion-list>
+	<div *ngFor="let item of itemsarray; let i = index ">
+		<button ion-item  *ngIf="item.Type=='Chocolates & Biscuits'"(click)="Itemdetails(itemsarray, i)">
+			<h2 style="font-weight: bold;font-size: 10px;"><font color="black" size="4px" weight="bold">ItemName: <font color="#003300" size="5px" weight="bold">{{item.Name}}</font></font></h2>
+			<p style="text-align:right; font-weight: bold; color:#f2073e;">Count: {{item.Count}}</p>
+			<h3>Amount per {{item.quantity}} kg:{{item.amount}}</h3>
+		</button>
+	</div>
+
+	</ion-list>
+	</ion-card>
+	
+
+	<ion-card>
+		<ion-card-header>
+			<h1><font color="white">Sauces, Spreads & Dips</font></h1>
+		</ion-card-header>
+		<ion-list>
+	<div *ngFor="let item of itemsarray; let i = index ">
+		<button ion-item  *ngIf="item.Type=='Sauces, Spreads & Dips'"(click)="Itemdetails(itemsarray, i)">
+			<h2 style="font-weight: bold;font-size: 10px;"><font color="black" size="4px" weight="bold">ItemName: <font color="#003300" size="5px" weight="bold">{{item.Name}}</font></font></h2>
+			<p style="text-align:right; font-weight: bold; color:#f2073e;">Count: {{item.Count}}</p>
+			<h3>Amount per {{item.quantity}} kg:{{item.amount}}</h3>
+		</button>
+	</div>
+
+	</ion-list>
+	</ion-card>
+	
+
+	<ion-card>
+		<ion-card-header>
+			<h1><font color="white">Chocolates & Biscuits</font></h1>
+		</ion-card-header>
+		<ion-list>
+	<div *ngFor="let item of itemsarray; let i = index ">
+		<button ion-item  *ngIf="item.Type=='Chocolates & Biscuits'"(click)="Itemdetails(itemsarray, i)">
+			<h2 style="font-weight: bold;font-size: 10px;"><font color="black" size="4px" weight="bold">ItemName: <font color="#003300" size="5px" weight="bold">{{item.Name}}</font></font></h2>
+			<p style="text-align:right; font-weight: bold; color:#f2073e;">Count: {{item.Count}}</p>
+			<h3>Amount per {{item.quantity}} kg:{{item.amount}}</h3>
+		</button>
+	</div>
+
+	</ion-list>
+	</ion-card>
+	
+
+	<ion-card>
+		<ion-card-header>
+			<h1><font color="white">Drinks & Beverages</font></h1>
+		</ion-card-header>
+		<ion-list>
+	<div *ngFor="let item of itemsarray; let i = index ">
+		<button ion-item  *ngIf="item.Type=='Drinks & Beverages'"(click)="Itemdetails(itemsarray, i)">
+			<h2 style="font-weight: bold;font-size: 10px;"><font color="black" size="4px" weight="bold">ItemName: <font color="#003300" size="5px" weight="bold">{{item.Name}}</font></font></h2>
+			<p style="text-align:right; font-weight: bold; color:#f2073e;">Count: {{item.Count}}</p>
+			<h3>Amount per {{item.quantity}} kg:{{item.amount}}</h3>
+		</button>
+	</div>
+
+	</ion-list>
+	</ion-card>
+	
+
+	<ion-card>
+		<ion-card-header>
+			<h1><font color="white">Cereals & Breakfast</font></h1>
+		</ion-card-header>
+		<ion-list>
+	<div *ngFor="let item of itemsarray; let i = index ">
+		<button ion-item  *ngIf="item.Type=='Cereals & Breakfast'"(click)="Itemdetails(itemsarray, i)">
+			<h2 style="font-weight: bold;font-size: 10px;"><font color="black" size="4px" weight="bold">ItemName: <font color="#003300" size="5px" weight="bold">{{item.Name}}</font></font></h2>
+			<p style="text-align:right; font-weight: bold; color:#f2073e;">Count: {{item.Count}}</p>
+			<h3>Amount per {{item.quantity}} kg:{{item.amount}}</h3>
+		</button>
+	</div>
+
+	</ion-list>
+	</ion-card>
+	
+
+	<ion-card>
+		<ion-card-header>
+			<h1><font color="white">Tinned & processed Food</font></h1>
+		</ion-card-header>
+		<ion-list>
+	<div *ngFor="let item of itemsarray; let i = index ">
+		<button ion-item  *ngIf="item.Type=='Tinned & processed Food'"(click)="Itemdetails(itemsarray, i)">
+			<h2 style="font-weight: bold;font-size: 10px;"><font color="black" size="4px" weight="bold">ItemName: <font color="#003300" size="5px" weight="bold">{{item.Name}}</font></font></h2>
+			<p style="text-align:right; font-weight: bold; color:#f2073e;">Count: {{item.Count}}</p>
+			<h3>Amount per {{item.quantity}} kg:{{item.amount}}</h3>
+		</button>
+	</div>
+
+	</ion-list>
+	</ion-card>
+	
+
+	<ion-card>
+		<ion-card-header>
+			<h1><font color="white">Eggs</font></h1>
+		</ion-card-header>
+		<ion-list>
+	<div *ngFor="let item of itemsarray; let i = index ">
+		<button ion-item  *ngIf="item.Type=='Eggs'"(click)="Itemdetails(itemsarray, i)">
+			<h2 style="font-weight: bold;font-size: 10px;"><font color="black" size="4px" weight="bold">ItemName: <font color="#003300" size="5px" weight="bold">{{item.Name}}</font></font></h2>
+			<p style="text-align:right; font-weight: bold; color:#f2073e;">Count: {{item.Count}}</p>
+			<h3>Amount per {{item.quantity}} kg:{{item.amount}}</h3>
+		</button>
+	</div>
+
+	</ion-list>
+	</ion-card>
+	
+
+	<ion-card>
+		<ion-card-header>
+			<h1><font color="white">Marinates</font></h1>
+		</ion-card-header>
+		<ion-list>
+	<div *ngFor="let item of itemsarray; let i = index ">
+		<button ion-item  *ngIf="item.Type=='Marinates'"(click)="Itemdetails(itemsarray, i)">
+			<h2 style="font-weight: bold;font-size: 10px;"><font color="black" size="4px" weight="bold">ItemName: <font color="#003300" size="5px" weight="bold">{{item.Name}}</font></font></h2>
+			<p style="text-align:right; font-weight: bold; color:#f2073e;">Count: {{item.Count}}</p>
+			<h3>Amount per {{item.quantity}} kg:{{item.amount}}</h3>
+		</button>
+	</div>
+
+	</ion-list>
+	</ion-card>
+	
+
+	<ion-card>
+		<ion-card-header>
+			<h1><font color="white">Poultry</font></h1>
+		</ion-card-header>
+		<ion-list>
+	<div *ngFor="let item of itemsarray; let i = index ">
+		<button ion-item  *ngIf="item.Type=='Poultry'"(click)="Itemdetails(itemsarray, i)">
+			<h2 style="font-weight: bold;font-size: 10px;"><font color="black" size="4px" weight="bold">ItemName: <font color="#003300" size="5px" weight="bold">{{item.Name}}</font></font></h2>
+			<p style="text-align:right; font-weight: bold; color:#f2073e;">Count: {{item.Count}}</p>
+			<h3>Amount per {{item.quantity}} kg:{{item.amount}}</h3>
+		</button>
+	</div>
+
+	</ion-list>
+	</ion-card>	
+
+	<ion-card>
+		<ion-card-header>
+			<h1><font color="white">Fish & Seafood</font></h1>
+		</ion-card-header>
+		<ion-list>
+	<div *ngFor="let item of itemsarray; let i = index ">
+		<button ion-item  *ngIf="item.Type=='Fish & Seafood'"(click)="Itemdetails(itemsarray, i)">
+			<h2 style="font-weight: bold;font-size: 10px;"><font color="black" size="4px" weight="bold">ItemName: <font color="#003300" size="5px" weight="bold">{{item.Name}}</font></font></h2>
+			<p style="text-align:right; font-weight: bold; color:#f2073e;">Count: {{item.Count}}</p>
+			<h3>Amount per {{item.quantity}} kg:{{item.amount}}</h3>
+		</button>
+	</div>
+
+	</ion-list>
+	</ion-card>
+	
+
+	<ion-card>
+		<ion-card-header>
+			<h1><font color="white">Mutton & Lamb</font></h1>
+		</ion-card-header>
+		<ion-list>
+	<div *ngFor="let item of itemsarray; let i = index ">
+		<button ion-item  *ngIf="item.Type=='Mutton & Lamb'"(click)="Itemdetails(itemsarray, i)">
+			<h2 style="font-weight: bold;font-size: 10px;"><font color="black" size="4px" weight="bold">ItemName: <font color="#003300" size="5px" weight="bold">{{item.Name}}</font></font></h2>
+			<p style="text-align:right; font-weight: bold; color:#f2073e;">Count: {{item.Count}}</p>
+			<h3>Amount per {{item.quantity}} kg:{{item.amount}}</h3>
+		</button>
+	</div>
+
+	</ion-list>
+	</ion-card>
+	
+
+	<ion-card>
+		<ion-card-header>
+			<h1><font color="white">Baby Food & Formula</font></h1>
+		</ion-card-header>
+		<ion-list>
+	<div *ngFor="let item of itemsarray; let i = index ">
+		<button ion-item  *ngIf="item.Type=='Baby Food & Formula'"(click)="Itemdetails(itemsarray, i)">
+			<h2 style="font-weight: bold;font-size: 10px;"><font color="black" size="4px" weight="bold">ItemName: <font color="#003300" size="5px" weight="bold">{{item.Name}}</font></font></h2>
+			<p style="text-align:right; font-weight: bold; color:#f2073e;">Count: {{item.Count}}</p>
+			<h3>Amount per {{item.quantity}} kg:{{item.amount}}</h3>
+		</button>
+	</div>
+
+	</ion-list>
+	</ion-card>
+	
+
+	<ion-card>
+		<ion-card-header>
+			<h1><font color="white">Baby Diapers & Wipes</font></h1>
+		</ion-card-header>
+		<ion-list>
+	<div *ngFor="let item of itemsarray; let i = index ">
+		<button ion-item  *ngIf="item.Type=='Baby Diapers & Wipes'"(click)="Itemdetails(itemsarray, i)">
+			<h2 style="font-weight: bold;font-size: 10px;"><font color="black" size="4px" weight="bold">ItemName: <font color="#003300" size="5px" weight="bold">{{item.Name}}</font></font></h2>
+			<p style="text-align:right; font-weight: bold; color:#f2073e;">Count: {{item.Count}}</p>
+			<h3>Amount per {{item.quantity}} kg:{{item.amount}}</h3>
+		</button>
+	</div>
+
+	</ion-list>
+	</ion-card>
+	
+</ion-content>

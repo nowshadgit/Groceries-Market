@@ -1,0 +1,67 @@
+
+
+<ion-header>
+   <h1 style="text-align: center;"><font color="white">Your basket</font></h1>
+
+</ion-header>
+
+
+<ion-content padding>
+  
+
+	<div padding>
+  <ion-segment [(ngModel)]="pet">
+    <ion-segment-button value="Items">
+     Please confirm your order
+    </ion-segment-button>
+    <ion-segment-button value="Orders">
+      Conformed orders
+    </ion-segment-button>
+  </ion-segment>
+</div>
+<div [ngSwitch]="pet">
+  <ion-list *ngSwitchCase="'Items'">
+    <ion-list>
+<div *ngIf="size!=0">
+
+	<ion-card>
+			<ion-list>
+				<button ion-item *ngFor="let item of orderarray; let i=index " (click)="selectItems(item)">
+						<h2 style="font-weight: bold;font-size: 10px;"><font color="black" size="4px" weight="bold">ItemName: <font color="#003300" size="5px" weight="bold">{{item.Name}}</font></font></h2>
+      <p style="text-align:right; font-weight: bold; color:green;">Count: {{item.Count}}</p>
+      <p style="text-align:right; font-weight: bold; color:green;">Kg's: {{item.quantity}}</p>
+      <h3>Total Item Amount:{{item.totalAmount}}</h3>
+				</button>
+			</ion-list>
+			
+	</ion-card>
+	<button ion-button  (click)='confirm(size)' block class="b1">Cinfirm orders</button>
+</div>
+<div *ngIf="size==0">
+		<h2 style="text-align: center;top-margin:50%;">Please buy anything then come to busket</h2>
+</div>
+</ion-list>
+</ion-list>
+	<ion-list *ngSwitchCase="'Orders'">
+  <div *ngIf="csize!=0">
+    <ion-list>
+    	<h1 style="text-align: center;">Your order items <h2 style="text-align:right;"> Total Amount:{{sum}}</h2></h1>
+    	<ion-list>
+				<ion-item *ngFor="let corder of corderarray; let i=index " >
+						<h2 style="font-weight: bold;font-size: 10px;"><font color="black" size="4px" weight="bold">ItemName: <font color="#003300" size="5px" weight="bold">{{corder.Name}}</font></font></h2>
+      <p style="text-align:right; font-weight: bold; color:green;">Count: {{corder.Count}}</p>
+      <p style="text-align:right; font-weight: bold; color:green;">Kg's: {{corder.quantity}}</p>
+      <h3>Total Item Amount:{{corder.totalAmount}}</h3>
+      <h3>Item status: {{corder.status}}</h3>
+				</ion-item>
+		</ion-list>
+		<button ion-button (click)='acceptedItems(csize)' class="b1">Accepted</button> 
+    </ion-list>
+	</div>
+	<div *ngIf="csize==0">
+		<h2 style="text-align: center;top-margin:50%;">Please buy anything then come to busket</h2>
+	</div>
+    </ion-list>
+  
+</div>
+</ion-content>

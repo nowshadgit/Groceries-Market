@@ -1,0 +1,31 @@
+
+<ion-header >
+
+  <ion-navbar >
+    <ion-title><h1 style="text-align: center;">Enter details</h1></ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+	<h1>{{itemsName.name}}</h1>
+<ion-list>
+	<ion-item>
+		<ion-label floating >Item Name</ion-label>
+		<ion-input type="text" [(ngModel)]="itemslist.Name"></ion-input>
+	</ion-item>
+	<ion-item>
+		<ion-label floating>cost</ion-label>
+		<ion-input type="number" [(ngModel)]="itemslist.amount"></ion-input>
+	</ion-item>
+	<ion-item>
+		<ion-label floating>Count</ion-label>
+		<ion-input type="text" [(ngModel)]="itemslist.Count"></ion-input>
+	</ion-item>
+	<ion-item>
+		<ion-label floating>Quantity(Kg's)</ion-label>
+		<ion-input type="text" [(ngModel)]="itemslist.quantity"></ion-input>
+	</ion-item>
+<button ion-button (click)="addItems(itemslist)" block>submit</button>
+</ion-list>
+</ion-content>

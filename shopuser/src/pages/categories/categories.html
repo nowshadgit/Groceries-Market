@@ -1,0 +1,22 @@
+
+<ion-header>
+    <h1 style="text-align: center;"><font size="6px" color="#4dff88">C </font><font size="6px" color="#66ccff">a </font><font size="6px" color="#ff99cc">T </font><font size="6px" color="#9999ff">e </font><font size="6px" color="#ffff66">G </font><font size="6px" color="#4dff88">o </font><font size="6px" color="#9999ff">R </font><font color="#99ff99" size="6px">i </font><font color="#ffcccc" size="6px">E </font><font size="6px" color="white">s</font></h1>
+</ion-header>
+<ion-content>
+<ion-list class="accordion-list">
+<ion-list-header  *ngFor="let item of information; let i = index" no-lines no-padding>
+	<button ion-item (click)= "toggleSection(i)" detail-none [ngClass]="{'section-active': item.open, 'section': !item.open}">
+		<ion-icon item-right name="arrow-down" *ngIf="!item.open"></ion-icon>
+		<ion-icon item-right name="arrow-up" *ngIf="item.open"></ion-icon>
+		{{ item.name }}
+	</button>
+	<ion-list *ngIf="item.children && item.open" no-lines>
+		<ion-list-header *ngFor="let child of item.children; let j = index" >
+			<button ion-item (click)="toggleitem(child.name)" class="child-item">
+				{{child.name}}
+			</button>
+		</ion-list-header>
+	</ion-list>
+</ion-list-header>
+</ion-list>
+</ion-content>

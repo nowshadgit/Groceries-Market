@@ -1,0 +1,31 @@
+
+<ion-header>
+
+  <ion-navbar>
+    <ion-title><h1 style="text-align: center;">Sign Up</h1></ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+<ion-list>
+ 	<ion-item>
+ 		<ion-label floating>User name</ion-label>
+ 		<ion-input type="text" [(ngModel)]="user.userName"></ion-input>
+ 	</ion-item>
+ 	<ion-item>
+ 		<ion-label floating>ShopId</ion-label>
+ 		<ion-input type="text" [(ngModel)]="user.shopId"></ion-input>
+ 	</ion-item>
+ 	<ion-item>
+ 		<ion-label floating>Address</ion-label>
+ 		<ion-input type="text" [(ngModel)]="user.address"></ion-input>
+ 	</ion-item>
+ 	<ion-item>
+ 		<ion-label floating>Password</ion-label>
+ 		<ion-input type="password" [(ngModel)]="user.password"></ion-input>
+ 	</ion-item>
+ 		<button ion-button  (click)='addUsers(user)' block  class="b1">Submit</button>
+</ion-list>
+</ion-content>

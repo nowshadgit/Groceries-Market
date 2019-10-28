@@ -1,0 +1,6 @@
+<ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
+<ion-list>
+  <button ion-item *ngFor="let country of items" (click)="itemse(country)">
+    <h2> {{ country }} </h2>
+  </button>
+</ion-list>
